@@ -9,8 +9,8 @@ int main()
 	float BMI = w / t2;
 
 	printf("\nBMI : %f", BMI);
-	printf("\nOver : %f", BMI - 25.0);
-	printf("\nLess : %f", 30.0 - BMI);
+	printf("\nOver : %d", BMI >= 25.0);
+	printf("\nFat : %d", 30.0 <= BMI);
 
 	return 0;
 }
