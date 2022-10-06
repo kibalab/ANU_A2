@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int a[2][3] = {1, 2, 3, 4, 5, 6};
+
+	int i, j;
+
+	for(i = 0 ; i< 3; i++)
+	{
+		for(j = 1; j>= 0; --j)
+		{
+			printf("%d ", a[j][i]);
+		}
+		printf("\n");
+	}
+}
