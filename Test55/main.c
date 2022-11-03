@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char a[10];
+	char b[10];
+	int n;
+	scanf("%s", a);
+	n = strlen(a);
+	printf("length : %d\n", n);
+	//strncpy(a+2, "st", 2);
+	strncpy(b, a, 2);
+	b[2] = '\0';
+	printf("%s\n", b);
+	strcat(b, "st");
+	printf("%s\n", b);
+}

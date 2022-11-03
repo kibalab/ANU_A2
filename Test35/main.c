@@ -3,7 +3,7 @@
 
 int main()
 {
-	int a[NUM+2][NUM+2] = { 0, };
+	int a[NUM+2][NUM+2] = { 0 };
 	int i, j, k = 1;
 
 	/**
@@ -19,6 +19,8 @@ int main()
 							i+j == NUM - 1 || 
 							i+j == NUM/2 - 1 || 
 							i-NUM/2+j == NUM - 1;
+			
+			//int condition = (i-j)%(NUM/2) == 0 || (i-j)%(NUM/2) == 3;
 			if(condition)
 				a[i][j] = k;
 			else
