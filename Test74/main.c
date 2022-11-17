@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <assert.h>
+
+int main()
+{
+	FILE* fp = NULL;
+	FILE* op = NULL;
+	fp = fopen("t1.txt", "r");
+	op = fopen("out.txt", "w");
+	int n, sum = 0;
+	char str[100];
+	while (!feof(fp))
+	{
+		//fscanf(fp, "%d", &n);
+		//printf("%d ", n);
+		if(fgets(str, 256, fp) == NULL) break;
+		printf("%s", str);
+		fprintf(op, "%s", str);
+		//sum += n;
+	}
+
+	fprintf(op, "\n%d", sum);
+	printf("\n%d", sum);
+	fclose(fp);
+}
