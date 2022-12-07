@@ -100,6 +100,7 @@ int main()
 			}
 			else
 			{
+				log[i].input[tryCount] = ans;
 				tryCount++;
 			}
 
